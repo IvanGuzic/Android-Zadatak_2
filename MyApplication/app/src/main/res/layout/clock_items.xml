@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkGray"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+
+        android:layout_width="290dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <TextView
+
+            android:id="@+id/clockTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="Title"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/clockCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="Category"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/clockDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:text="Date"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/clockImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="clip_horizontal|end"
+        android:layout_marginLeft="0dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

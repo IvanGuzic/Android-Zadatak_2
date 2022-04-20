@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".presenter.ClockPresenter" >
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/darkGray"
+            android:minHeight="?actionBarSize"
+            android:theme="?actionBarTheme" >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="CLOCK DETAILS"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="@color/white"
+                android:onClick="saveClock"
+                android:text="SAVE"
+                android:textColor="@color/darkGray"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Title"
+            android:textColor="@color/darkGray"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/titleEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:textColor="@color/darkGray"
+            android:textColorHighlight="#0C0C0C"
+            android:textColorLink="#191919"
+            android:textSize="25sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Category"
+            android:textColor="@color/darkGray"
+            android:textColorHighlight="#050505"
+            android:textColorLink="#151515"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <EditText
+
+            android:id="@+id/categoryEditText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:minLines="1"
+            android:textColor="@color/darkGray"
+            android:textSize="25sp" />
+
+        <Button
+
+            android:id="@+id/datePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/darkGray"
+            android:onClick="setDate"
+            android:text="SELECT DATE" />
+
+        <TextView
+
+            android:id="@+id/datePickerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick a date above"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+        <Button
+
+            android:id="@+id/imagePickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/darkGray"
+            android:onClick="setDate"
+            android:text="SELECT IMAGE" />
+
+        <TextView
+
+            android:id="@+id/imagePickerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pick an image above"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textColor="@color/darkGray"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+
+            android:id="@+id/imagePreviewView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"  />
+
+        <Button
+
+            android:id="@+id/deleteClockButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/darkGray"
+            android:onClick="deleteClock"
+            android:text="DELETE"
+            android:textColor="@color/red"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
